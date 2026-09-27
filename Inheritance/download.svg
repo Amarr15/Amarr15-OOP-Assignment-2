@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3996.416666666667 1528.3" width="3996.416666666667" height="1528.3" style="--bg:#FFFFFF;--fg:#3B3B3B;--line:#3B3B3B;--accent:#005FB8;--muted:#3B3B3BCC;--surface:#F8F8F8;--border:#3B3B3B;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  .mono { font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', ui-monospace, monospace; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="cls-inherit" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto-start-reverse">
+    <polygon points="0 0, 12 5, 0 10" fill="var(--bg)" stroke="var(--_arrow)" stroke-width="1.5" />
+  </marker>
+  <marker id="cls-composition" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto-start-reverse">
+    <polygon points="6 0, 12 5, 6 10, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="1" />
+  </marker>
+  <marker id="cls-aggregation" markerWidth="12" markerHeight="10" refX="0" refY="5" orient="auto-start-reverse">
+    <polygon points="6 0, 12 5, 6 10, 0 5" fill="var(--bg)" stroke="var(--_arrow)" stroke-width="1.5" />
+  </marker>
+  <marker id="cls-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto-start-reverse">
+    <polyline points="0 0, 8 3, 0 6" fill="none" stroke="var(--_arrow)" stroke-width="1.5" />
+  </marker>
+</defs>
+<polyline class="class-relationship" data-from="Person" data-to="Member" data-type="inheritance" data-marker-at="from" points="3292.6000000000004,168 3292.6000000000004,228" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="Member" data-to="StudentMember" data-type="inheritance" data-marker-at="from" points="3292.6000000000004,416 3292.6000000000004,426 3218.9,426 3218.9,476" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="Member" data-to="PremiumMember" data-type="inheritance" data-marker-at="from" points="3110.4,416 3110.4,426 2634.9,426 2634.9,476" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="Person" data-to="Staff" data-type="inheritance" data-marker-at="from" points="3164.066666666667,168 3164.066666666667,178 1713.6000000000004,178 1713.6000000000004,243" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="Staff" data-to="Librarian" data-type="inheritance" data-marker-at="from" points="1928.8000000000002,411 1928.8000000000002,476" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="Staff" data-to="Shelver" data-type="inheritance" data-marker-at="from" points="1498.4000000000003,411 1498.4000000000003,426 424.1999999999998,426 424.2,476" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="Staff" data-to="HeadLibrarian" data-type="inheritance" data-marker-at="from" points="1713.6000000000004,411 1713.6000000000004,436 1199.6000000000001,436 1199.6000000000001,476" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="LibraryItem" data-to="Book" data-type="inheritance" data-marker-at="from" points="3559.966666666667,1360.3 3559.9666666666667,1380.3 3285.2166666666667,1380.3 3285.2166666666667,1420.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="LibraryItem" data-to="Dvd" data-type="inheritance" data-marker-at="from" points="3747.116666666667,1360.3 3747.116666666667,1420.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="LibraryItem" data-to="Magazine" data-type="inheritance" data-marker-at="from" points="3372.816666666667,1360.3 3372.8166666666666,1370.3 2806.816666666667,1370.3 2806.816666666667,1420.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-start="url(#cls-inherit)" />
+<polyline class="class-relationship" data-from="Member" data-to="Loan" data-type="association" data-marker-at="to" data-label="has history" data-from-cardinality="1" data-to-cardinality="0..*" points="3474.8,416 3474.8,664" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#cls-arrow)" />
+<polyline class="class-relationship" data-from="Loan" data-to="LibraryItem" data-type="association" data-marker-at="to" data-label="borrows" data-from-cardinality="0..*" data-to-cardinality="1" points="3559.9666666666667,932 3559.966666666667,1072.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#cls-arrow)" />
+<polyline class="class-relationship" data-from="Loan" data-to="LoanStatus" data-type="association" data-marker-at="to" data-label="has" points="3389.6333333333337,932 3389.6333333333337,942 3085.666666666667,942 3085.666666666667,1072.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#cls-arrow)" />
+<g class="class-node" data-id="LoanStatus" data-label="LoanStatus" data-annotation="enumeration">
+  <rect x="3025.666666666667" y="1072.3" width="120" height="124" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="3025.666666666667" y="1072.3" width="120" height="48" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="3085.666666666667" y="1084.3" text-anchor="middle" dy="0.35em" font-size="10" font-weight="500" font-style="italic" fill="var(--_text-muted)">&lt;&lt;enumeration&gt;&gt;</text>
+  <text x="3085.666666666667" y="1102.3" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">LoanStatus</text>
+  <line x1="3025.666666666667" y1="1120.3" x2="3145.666666666667" y2="1120.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3033.666666666667" y="1134.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-sec)">Borrowed</tspan></text>
+  <text x="3033.666666666667" y="1154.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-sec)">Returned</tspan></text>
+  <text x="3033.666666666667" y="1174.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-sec)">Lost</tspan></text>
+  <line x1="3025.666666666667" y1="1188.3" x2="3145.666666666667" y2="1188.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+</g>
+<g class="class-node" data-id="Person" data-label="Person">
+  <rect x="3035.5333333333338" y="40" width="385.59999999999997" height="128" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="3035.5333333333338" y="40" width="385.59999999999997" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="3228.333333333334" y="56" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Person</text>
+  <line x1="3035.5333333333338" y1="72" x2="3421.1333333333337" y2="72" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3043.5333333333338" y="86" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">PersonId</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">string</tspan></text>
+  <text x="3043.5333333333338" y="106" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">FullName</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">string</tspan></text>
+  <text x="3043.5333333333338" y="126" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Phone</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">string</tspan></text>
+  <line x1="3035.5333333333338" y1="140" x2="3421.1333333333337" y2="140" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3043.5333333333338" y="154" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)"># </tspan><tspan fill="var(--_text-sec)">Person(string personId, string fullName, string phone)</tspan></text>
+</g>
+<g class="class-node" data-id="Member" data-label="Member">
+  <rect x="2928.2000000000003" y="228" width="728.8" height="188" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="2928.2000000000003" y="228" width="728.8" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="3292.6000000000004" y="244" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Member</text>
+  <line x1="2928.2000000000003" y1="260" x2="3657" y2="260" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2936.2000000000003" y="274" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">- </tspan><tspan fill="var(--_text-sec)">_loans</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">List~Loan~</tspan></text>
+  <text x="2936.2000000000003" y="294" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Loans</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">IReadOnlyList~Loan~</tspan></text>
+  <text x="2936.2000000000003" y="314" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">MaxLoanLimit</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">int</tspan></text>
+  <text x="2936.2000000000003" y="334" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">LateFeeDiscountPercentage</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">double</tspan></text>
+  <line x1="2928.2000000000003" y1="348" x2="3657" y2="348" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2936.2000000000003" y="362" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)"># </tspan><tspan fill="var(--_text-sec)">Member(string personId, string fullName, string phone, int maxLoanLimit, double lateFeeDiscountPercentage)</tspan></text>
+  <text x="2936.2000000000003" y="382" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">BorrowItem(LibraryItem item, DateTime borrowDate)</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">Loan</tspan></text>
+  <text x="2936.2000000000003" y="402" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">int GetActiveLoansCount()</tspan></text>
+</g>
+<g class="class-node" data-id="StudentMember" data-label="StudentMember">
+  <rect x="3003" y="476" width="431.8" height="68" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="3003" y="476" width="431.8" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="3218.9" y="492" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">StudentMember</text>
+  <line x1="3003" y1="508" x2="3434.8" y2="508" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="3003" y1="516" x2="3434.8" y2="516" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3011" y="530" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">StudentMember(string personId, string fullName, string phone)</tspan></text>
+</g>
+<g class="class-node" data-id="PremiumMember" data-label="PremiumMember">
+  <rect x="2306.8" y="476" width="656.1999999999999" height="88" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="2306.8" y="476" width="656.1999999999999" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="2634.9" y="492" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">PremiumMember</text>
+  <line x1="2306.8" y1="508" x2="2963" y2="508" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2314.8" y="522" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">ReadingPoints</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">int</tspan></text>
+  <line x1="2306.8" y1="536" x2="2963" y2="536" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2314.8" y="550" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">PremiumMember(string personId, string fullName, string phone, double lateFeeDiscountPercentage)</tspan></text>
+</g>
+<g class="class-node" data-id="Staff" data-label="Staff">
+  <rect x="1283.2000000000003" y="243" width="860.8" height="168" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1283.2000000000003" y="243" width="860.8" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1713.6000000000004" y="259" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Staff</text>
+  <line x1="1283.2000000000003" y1="275" x2="2144" y2="275" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1291.2000000000003" y="289" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">HireDate</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">DateTime</tspan></text>
+  <text x="1291.2000000000003" y="309" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">MonthlySalary</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">double</tspan></text>
+  <text x="1291.2000000000003" y="329" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)"># </tspan><tspan fill="var(--_text-sec)">ResponsibilityAllowance</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">double</tspan></text>
+  <line x1="1283.2000000000003" y1="343" x2="2144" y2="343" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1291.2000000000003" y="357" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)"># </tspan><tspan fill="var(--_text-sec)">Staff(string personId, string fullName, string phone, DateTime hireDate, double monthlySalary, double responsibilityAllowance)</tspan></text>
+  <text x="1291.2000000000003" y="377" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">GiveRaise(double percentage)</tspan></text>
+  <text x="1291.2000000000003" y="397" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">GetMonthlyPay()</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">double</tspan></text>
+</g>
+<g class="class-node" data-id="Librarian" data-label="Librarian">
+  <rect x="1590.8000000000002" y="476" width="676" height="108" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1590.8000000000002" y="476" width="676" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1928.8000000000002" y="492" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Librarian</text>
+  <line x1="1590.8000000000002" y1="508" x2="2266.8" y2="508" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1590.8000000000002" y1="516" x2="2266.8" y2="516" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1598.8000000000002" y="530" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Librarian(string personId, string fullName, string phone, DateTime hireDate, double monthlySalary)</tspan></text>
+  <text x="1598.8000000000002" y="550" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">ProcessReturn(Loan loan, DateTime returnDate)</tspan></text>
+  <text x="1598.8000000000002" y="570" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">MarkLoanAsLost(Loan loan)</tspan></text>
+</g>
+<g class="class-node" data-id="Shelver" data-label="Shelver">
+  <rect x="40" y="476" width="768.4" height="108" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="476" width="768.4" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="424.2" y="492" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Shelver</text>
+  <line x1="40" y1="508" x2="808.4" y2="508" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="48" y="522" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Section</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">string</tspan></text>
+  <line x1="40" y1="536" x2="808.4" y2="536" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="48" y="550" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Shelver(string personId, string fullName, string phone, DateTime hireDate, double monthlySalary, string section)</tspan></text>
+  <text x="48" y="570" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Reassign(string newSection)</tspan></text>
+</g>
+<g class="class-node" data-id="HeadLibrarian" data-label="HeadLibrarian">
+  <rect x="848.4000000000001" y="476" width="702.4" height="128" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="848.4000000000001" y="476" width="702.4" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1199.6000000000001" y="492" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">HeadLibrarian</text>
+  <line x1="848.4000000000001" y1="508" x2="1550.8000000000002" y2="508" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="848.4000000000001" y1="516" x2="1550.8000000000002" y2="516" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="856.4000000000001" y="530" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">HeadLibrarian(string personId, string fullName, string phone, DateTime hireDate, double monthlySalary)</tspan></text>
+  <text x="856.4000000000001" y="550" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">ChangeBaseLateFee(LibraryItem item, double newFee)</tspan></text>
+  <text x="856.4000000000001" y="570" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">WithdrawItem(LibraryItem item)</tspan></text>
+  <text x="856.4000000000001" y="590" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">RestoreItem(LibraryItem item)</tspan></text>
+</g>
+<g class="class-node" data-id="LibraryItem" data-label="LibraryItem">
+  <rect x="3185.666666666667" y="1072.3" width="748.6" height="288" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="3185.666666666667" y="1072.3" width="748.6" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="3559.966666666667" y="1088.3" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">LibraryItem</text>
+  <line x1="3185.666666666667" y1="1104.3" x2="3934.266666666667" y2="1104.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3193.666666666667" y="1118.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">CatalogNumber</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">string</tspan></text>
+  <text x="3193.666666666667" y="1138.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Title</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">string</tspan></text>
+  <text x="3193.666666666667" y="1158.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">LoanPeriodDays</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">int</tspan></text>
+  <text x="3193.666666666667" y="1178.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">FeeMultiplier</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">double</tspan></text>
+  <text x="3193.666666666667" y="1198.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">BaseLateFee</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">double</tspan></text>
+  <text x="3193.666666666667" y="1218.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">IsWithdrawn</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">bool</tspan></text>
+  <text x="3193.666666666667" y="1238.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">IsOnLoan</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">bool</tspan></text>
+  <line x1="3185.666666666667" y1="1252.3" x2="3934.266666666667" y2="1252.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3193.666666666667" y="1266.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)"># </tspan><tspan fill="var(--_text-sec)">LibraryItem(string catalogNumber, string title, int loanPeriodDays, double feeMultiplier, double baseLateFee)</tspan></text>
+  <text x="3193.666666666667" y="1286.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">GetDailyLateFee()</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">double</tspan></text>
+  <text x="3193.666666666667" y="1306.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">~ </tspan><tspan fill="var(--_text-sec)">SetOnLoan(bool onLoan)</tspan></text>
+  <text x="3193.666666666667" y="1326.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">~ </tspan><tspan fill="var(--_text-sec)">SetWithdrawn(bool withdrawn)</tspan></text>
+  <text x="3193.666666666667" y="1346.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">~ </tspan><tspan fill="var(--_text-sec)">SetBaseLateFee(double newFee)</tspan></text>
+</g>
+<g class="class-node" data-id="Book" data-label="Book">
+  <rect x="3072.616666666667" y="1420.3" width="425.2" height="68" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="3072.616666666667" y="1420.3" width="425.2" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="3285.2166666666667" y="1436.3" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Book</text>
+  <line x1="3072.616666666667" y1="1452.3" x2="3497.8166666666666" y2="1452.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="3072.616666666667" y1="1460.3" x2="3497.8166666666666" y2="1460.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3080.616666666667" y="1474.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Book(string catalogNumber, string title, double baseLateFee)</tspan></text>
+</g>
+<g class="class-node" data-id="Dvd" data-label="Dvd">
+  <rect x="3537.8166666666666" y="1420.3" width="418.59999999999997" height="68" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="3537.8166666666666" y="1420.3" width="418.59999999999997" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="3747.116666666667" y="1436.3" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Dvd</text>
+  <line x1="3537.8166666666666" y1="1452.3" x2="3956.4166666666665" y2="1452.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="3537.8166666666666" y1="1460.3" x2="3956.4166666666665" y2="1460.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3545.8166666666666" y="1474.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Dvd(string catalogNumber, string title, double baseLateFee)</tspan></text>
+</g>
+<g class="class-node" data-id="Magazine" data-label="Magazine">
+  <rect x="2581.016666666667" y="1420.3" width="451.59999999999997" height="68" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="2581.016666666667" y="1420.3" width="451.59999999999997" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="2806.816666666667" y="1436.3" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Magazine</text>
+  <line x1="2581.016666666667" y1="1452.3" x2="3032.616666666667" y2="1452.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="2581.016666666667" y1="1460.3" x2="3032.616666666667" y2="1460.3" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2589.016666666667" y="1474.3" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Magazine(string catalogNumber, string title, double baseLateFee)</tspan></text>
+</g>
+<g class="class-node" data-id="Loan" data-label="Loan">
+  <rect x="3219.3" y="664" width="511" height="268" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="3219.3" y="664" width="511" height="32" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="3474.8" y="680" text-anchor="middle" font-size="13" font-weight="700" fill="var(--_text)" dy="4.55">Loan</text>
+  <line x1="3219.3" y1="696" x2="3730.3" y2="696" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3227.3" y="710" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">LoanId</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">string</tspan></text>
+  <text x="3227.3" y="730" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">BorrowDate</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">DateTime</tspan></text>
+  <text x="3227.3" y="750" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">ReturnDate</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">DateTime?</tspan></text>
+  <text x="3227.3" y="770" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Member</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">Member</tspan></text>
+  <text x="3227.3" y="790" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Item</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">LibraryItem</tspan></text>
+  <text x="3227.3" y="810" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Status</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">LoanStatus</tspan></text>
+  <text x="3227.3" y="830" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">DueDate</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">DateTime</tspan></text>
+  <text x="3227.3" y="850" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">LateFee</tspan><tspan fill="var(--_text-faint)">: </tspan><tspan fill="var(--_text-muted)">double</tspan></text>
+  <line x1="3219.3" y1="864" x2="3730.3" y2="864" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3227.3" y="878" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">+ </tspan><tspan fill="var(--_text-sec)">Loan(string loanId, Member member, LibraryItem item, DateTime borrowDate)</tspan></text>
+  <text x="3227.3" y="898" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">~ </tspan><tspan fill="var(--_text-sec)">CompleteReturn(DateTime returnDate)</tspan></text>
+  <text x="3227.3" y="918" class="mono" dy="0.35em" font-size="11" font-weight="400"><tspan fill="var(--_text-faint)">~ </tspan><tspan fill="var(--_text-sec)">MarkAsLost()</tspan></text>
+</g>
+
+
+
+
+
+
+
+
+
+
+<text x="3509.058" y="532" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">has history</text>
+<text x="3460.8" y="430" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">1</text>
+<text x="3460.8" y="650" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">0..*</text>
+<text x="3587.987666666667" y="994.15" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">borrows</text>
+<text x="3545.9666666666667" y="946" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">0..*</text>
+<text x="3545.966666666667" y="1058.3" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">1</text>
+<text x="3069.931666666667" y="994.15" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">has</text>
+</svg>
